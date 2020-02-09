@@ -34,7 +34,7 @@ end
 
 
 # Your code after this point
-
+first = false
 def movies_with_director_key(name, movies_collection)
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
@@ -90,12 +90,13 @@ def gross_per_studio(collection)
   # eliminate copies of studios or check for copies while being made
   # using the studioNames array, create a hash in which all the keys are the studio names
   # loop through collection to take the gross and add it to its corresponding studio name
-  pp collection
+  if !first
+    pp collection
+    first = true
   hash = {}
   studioNames = []
   
   i = 0
-  # pp collection
 # now that the BIG MISTAKE has been fixed, this nested loop is one nest too deep (i think)
   while i < collection.length # scanning the length of the big array
   
