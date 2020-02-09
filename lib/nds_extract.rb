@@ -151,7 +151,7 @@ def movies_with_directors_set(source)
   # pp source 
   
   # pp source[0][:name]
-  # pp source[0][:movies][0]
+  pp source[0][:movies][0]
   
   newArray = []
   x = 0
