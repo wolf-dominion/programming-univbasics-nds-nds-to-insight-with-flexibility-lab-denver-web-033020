@@ -65,7 +65,7 @@ def movies_with_director_key(name, movies_collection)
   array
 end
 
-
+$first = false
 def gross_per_studio(collection)
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
@@ -89,7 +89,7 @@ def gross_per_studio(collection)
   # eliminate copies of studios or check for copies while being made
   # using the studioNames array, create a hash in which all the keys are the studio names
   # loop through collection to take the gross and add it to its corresponding studio name
-  if !first
+  if !$first
     pp collection
     first = true
   end
