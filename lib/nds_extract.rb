@@ -90,7 +90,7 @@ def gross_per_studio(collection)
   # eliminate copies of studios or check for copies while being made
   # using the studioNames array, create a hash in which all the keys are the studio names
   # loop through collection to take the gross and add it to its corresponding studio name
-  
+  pp collection
   hash = {}
   studioNames = []
   
