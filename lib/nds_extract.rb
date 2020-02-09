@@ -103,7 +103,7 @@ def gross_per_studio(collection)
       
       studioInArray = false
       
-      while y < studioNames.length || y = 0 # scanning the new array to check for doubles before adding a studion name to it
+      while y < studioNames.length # scanning the new array to check for doubles before adding a studion name to it
       
         if collection[i][:movie][:studio] == studioNames[y]
           studioInArray = true
