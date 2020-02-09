@@ -159,7 +159,7 @@ def movies_with_directors_set(source)
     i = 0
     movieArray = []
     while i < source[x][:movies].length
-      movieArray[i] = {:movie => source[x][:movies][i], :director_name => source[x][:name], :worldwide_gross} # Huge mistake here was that I didn't add [i] after [:movies], so it kept adding all the director's movies for each array index instead of one of his movies for each array index. The test in this lesson did not cover for duplicates and just tested for the correct director name (?) and nothing else, so mine appeared correct but really wasn't and led to flawed results in the final methods. 
+      movieArray[i] = {:movie => source[x][:movies][i], :director_name => source[x][:name], :worldwide_gross => source[x][:movies][i][:worldwide_gross]} # Huge mistake here was that I didn't add [i] after [:movies], so it kept adding all the director's movies for each array index instead of one of his movies for each array index. The test in this lesson did not cover for duplicates and just tested for the correct director name (?) and nothing else, so mine appeared correct but really wasn't and led to flawed results in the final methods. 
       i += 1
     end
     newArray[x] = movieArray
