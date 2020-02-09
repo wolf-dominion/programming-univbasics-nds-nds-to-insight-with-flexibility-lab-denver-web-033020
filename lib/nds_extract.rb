@@ -106,7 +106,7 @@ def gross_per_studio(collection)
       
       while y < studioNames.length # scanning the new array to check for doubles before adding a studion name to it
       
-        if collection[i][:movie][:studio] == studioNames[y]
+        if collection[i][:studio] == studioNames[y]
           studioInArray = true
           break
         end
