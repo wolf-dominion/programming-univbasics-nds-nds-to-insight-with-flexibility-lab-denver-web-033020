@@ -92,7 +92,7 @@ def gross_per_studio(collection)
   # loop through collection to take the gross and add it to its corresponding studio name
   
   hash = {}
-  studioNames = [0]
+  studioNames = []
   
   i = 0
   # pp collection
