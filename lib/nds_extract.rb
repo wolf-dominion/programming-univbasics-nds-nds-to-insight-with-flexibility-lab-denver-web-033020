@@ -115,11 +115,11 @@ def gross_per_studio(collection)
 
       if studioInArray == false
         
-        studioNames.push(collection[i][:movie][:studio])
-        hash[collection[i][:movie][:studio]] = collection[i][:movie][:worldwide_gross]
+        studioNames.push(collection[i][:studio])
+        hash[collection[i][:studio]] = collection[i][:worldwide_gross]
         
       else
-        hash[collection[i][:movie][:studio]] += collection[i][:movie][:worldwide_gross]
+        hash[collection[i][:studio]] += collection[i][:worldwide_gross]
       end
       
     i += 1
