@@ -93,6 +93,7 @@ def gross_per_studio(collection)
   if !first
     pp collection
     first = true
+  end
   hash = {}
   studioNames = []
   
