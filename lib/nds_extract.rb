@@ -91,7 +91,7 @@ def gross_per_studio(collection)
   # loop through collection to take the gross and add it to its corresponding studio name
   if !$first
     pp collection
-    first = true
+    $first = true
   end
   hash = {}
   studioNames = []
